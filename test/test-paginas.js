@@ -1,7 +1,7 @@
 // con esto uso las funciones de chai
 var expect = require('chai').expect;
 //para activa la busqueda dentro del html o xml
-var chaijquery = require('chai-jquery');
+/// chaijquery = require('chai-jquery');
 // como uso el http hago referencia al
 var request = require('request');
 // la insutrccion para que lance la prueba
@@ -34,19 +34,19 @@ describe ("Pruebas de Red",function() {
     });
   });
 });
-describe("Test jquery html",function () {
+///describe("Test jquery html",function () {
 //jquery usar $() bsuca un string
 // #identificador = <xxx ide=identificador"
 //elemento = <elemento ....
 //.clase = <xxx class="clase"...
 // $("table#peeureba.clase1 tr") busca una tabla
-  it ('Test H1', function(done) {
-        request.get("http://localhost:8081",
-                           function(error,response,body) {
-                             expect($('body h1')).to.have.text("Bienvenido a mi blog");
-                             done();
-       });
-   });
-});
+  ////it ('Test H1', function(done) {
+      ////  request.get("http://localhost:8081",
+          ////                 function(error,response,body) {
+              ///               expect($('body h1')).to.have.text("Bienvenido a mi blog");
+                ///             done();
+    /// });
+  /// });
+///});
 //para lanzalo hay que ir al packege.json en script "testUniversidad": "mocha"
 // o poner consola npm start , si hago lanzamientos a el contenedor debere poner en otra consola npm stat
