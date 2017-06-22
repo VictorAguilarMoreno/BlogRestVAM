@@ -6,9 +6,13 @@ const path =require('path');
 //Constantes
 const PORT = 8081;
 //app --con esto inicioalizo el servidor , ya esta escuchando en el 8080
+<<<<<<< HEAD
 
 const app =express();
 app.use(express.static(__dirname));
+=======
+const app =express();
+>>>>>>> 5776a1fc5efd9fa04fd7eab24fef9da6a6605796
 // ponenos los response y request, el propio get si resuelve la informacion del navegador y podria enviar una cockie
 app.get('/',function(req,res){
 //  res.send("Bienvenido a BBVA techUniversity&reg;\n") ahora para poner la web neecsito indicar donde esta el directiro
