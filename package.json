@@ -7,10 +7,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "mocha"
-<<<<<<< HEAD
 
-=======
->>>>>>> 5776a1fc5efd9fa04fd7eab24fef9da6a6605796
   },
   "dependencies": {
     "express": "^4.13.3"
