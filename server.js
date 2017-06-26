@@ -18,6 +18,10 @@ app.get('/detallePost/:id',function(request,respuesta){
 //  servira para poder enviar el detallePost y enviar otra pagina pero con el codigo del detalle
   respuesta.sendfile(path.join(__dirname + '/detallePost.html'));
 });
+app.get('/admin',function(request,respuesta){
+//  servira para poder enviar el detallePost y enviar otra pagina pero con el codigo del detalle
+  respuesta.sendfile(path.join(__dirname + '/admin.html'));
+});
 //para asegurame que funciona escucho
 app.listen(PORT);
 console.log('Express funcionando en BBVA tech en el puerto ' + PORT);
